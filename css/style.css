@@ -1,0 +1,307 @@
+/* ========== Reset and Base Styles ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Parkinsans', sans-serif;
+    line-height: 1.6;
+    background-color: #b3b6b33a; /* Adjust with your color palette */
+}
+
+/* ========== Header Styling ========== */
+header {
+    background-color: #222; /* Header background color */
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 800; /* Bold style for the logo */
+}
+
+/* Style for the header image */
+header img {
+    width: 100%; /* Makes the image stretch across the full width of the page */
+    display: block; /* Removes any extra space under the image */
+    height: auto; /* Maintains the aspect ratio of the image */
+}
+
+/* ========== Navigation Styling ========== */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #780a69; /* Add a hover effect for links */
+}
+
+header nav a {
+    font-size: 2rem; /* Double the default size (1rem x 2 = 2rem) */
+    padding: 0.5em 2em;
+}
+
+/* ========== Main Content Styling ========== */
+main {
+    padding: 2rem;
+}
+
+main section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: disc; /* Change to 'circle' or 'square' for different styles */
+}
+
+ul li {
+    margin-bottom: 0.5rem; /* Adds space between list items */
+}
+
+/* Two-column layout for intro section */
+.intro {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #efe5f0; /* Optional: Light background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(222, 209, 209, 0.1);
+}
+
+/* Column styling */
+.intro .column {
+    flex: 1;
+}
+
+.intro .column.image img {
+    width: 100%; /* Makes the image responsive */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro .column.text h2 {
+    margin-bottom: 1rem;
+    color: #0c0c0c; /* Matches site color scheme */
+}
+
+.intro .column.text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ========== Footer Styling ========== */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* ========== Form Styling ========== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+form input, 
+form select, 
+form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+form input[type="radio"] {
+    width: auto;
+}
+
+form button {
+    background-color: #6a5470;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color:#780a69; /* Add a hover effect for links */
+    ;
+}
+
+/* ========== Fieldset Styling ========== */
+form fieldset {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+form legend {
+    font-weight: 600;
+}
+
+/* ========== Table Styling ========== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table caption {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+table th, 
+table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+table th {
+    background-color: #222;
+    color: #fff;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styling for the rate card table */
+.rate-card table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 2rem; /* Add space above the table */
+}
+
+.rate-card th, .rate-card td {
+    border: 1px solid #ccc; /* Border for cells */
+    padding: 0.5rem; /* Cell padding */
+    text-align: left; /* Align text to the left */
+}
+
+.rate-card th {
+    background-color: #222; /* Header background color */
+    color: #fff; /* Header text color */
+}
+
+.rate-card tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row color */
+}
+
+.rate-card tbody tr:hover {
+    background-color: #f1f1f1; /* Hover effect */
+}
+
+/* ========== Form and Table Alignment ========== */
+form, table {
+    width: 100%;
+}
+
+/* Contact Form Container */
+.contact-container {
+    display: flex; /* Enable flexbox layout */
+    gap: 2rem; /* Space between the form and photo */
+    max-width: 1500px; /* Optional: Limit the width of the container */
+    margin: 2rem auto; /* Center the container */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+/* Contact Form Styling */
+.contact-form {
+    flex: 1 1 55%; /* Allow the form to take up 55% of the space */
+    min-width: 300px; /* Ensure the form doesn't shrink too much */
+    position: relative;
+}
+
+/* Contact Photo Styling */
+.contact-photo {
+    flex: 1 1 40%; /* Allow the photo to take up 40% of the space */
+    min-width: 300px; /* Ensure the photo doesn't shrink too much */
+    position: relative;
+}
+
+.contact-photo img {
+    width: 100%; /* Make the image responsive */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* ========== Responsive Design (Optional) ========== */
+@media (max-width: 768px) {
+    main section {
+        padding: 1rem;
+    }
+
+    form input, 
+    form select, 
+    form button {
+        font-size: 0.9rem;
+    }
+
+    table th, 
+    table td {
+        font-size: 0.9rem;
+    }
+
+    header img {
+        max-height: 200px; /* Make the image smaller on narrower screens */
+    }
+
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro .column.image img {
+        margin-bottom: 1rem;
+    }
+
+    .contact-container {
+        flex-direction: column; /* Stack form and photo vertically */
+    }
+
+    .contact-photo {
+        margin-top: 1rem; /* Add space between form and photo */
+    }
+}

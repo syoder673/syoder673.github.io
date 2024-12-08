@@ -1,133 +1,105 @@
 <!DOCTYPE html>
-
-<!--Student Name: Sandra Yoder
-    File Name: contact.html
-    Date:11/7/24
-    -->
+<!-- Stadent Name: Sandra Yoder
+    Date: 12/5/2024
+ -->
 
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Strike a Chord: Contact</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greg P. French | Contact</title>
+    <!-- Link to Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-        <!--Mobile Nav-->
-        <nav class="mobile-nav">
-            <div id="menu-links">
-                <a href="index.html">Home</a>
-                <a href="lessons.html">Lessons</a>
-                <a href="instructors.html">Instructors</a>
-                <a href="rentals.html">Rentals</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
-            <a class="menu-icon" onclick="hamburger()">
-                <div>&#9776;</div>
-            </a>
-        </nav>
-
-    <!--Use the header area for the website name or logo-->
-
     <header>
-        <h1> &#9836; Strike a Chord &#9836;</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Gallery</a>
+            <a href="#">About</a>
+        </nav>
     </header>
 
-    <div id="hero" class="tab-desk">
-        <img src="lab1/music-notes.png" alt="colorful music notes">
-    </div>
-
-    <!--Use the nav area to add hyperlinks to other pages within the website-->
-
-    <nav class="tab-desk">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="lessons.html">Lessons</a></li>
-            <li><a href="instructors.html">Instructors</a></li>
-            <li><a href="rentals.html">Rentals</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-
-    <!--Use the main area to add the main content of the webpage-->
-
     <main>
-        <div id="contact">
-            <h2> Contact us today to schedule your first lesson.</h2>
-            <p><a href="tel:+18145559228" class="tel-link mobile">Phone Number:(814) 555-9228</a></p>
-            <p>Email: <a href="mailto:lessons@strikeachord.net" class="email-link">lessons@strikeachord.net</a></p>
-            <p>We are located at: 1122 Music Lane, Chicago, IL60007</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380511.4516956358!2d-88.06161527413067!3d41.83377338289125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL!5e0!3m2!1sen!2sus!4v1726097424347!5m2!1sen!2sus"
-                width="600" height="450" class="map" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-
-            <div id="form">
-                <h2>Complete the form below and one of our staff members will contact you.</h2>
-                <form class="form-grid"><!-- Start Form -->
+        <section class="rate-card">
+            <h3>Photography Rates and Services</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cat Portrait Session</td>
+                        <td>Capturing high-quality portraits of your beloved cat with natural backgrounds.</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>Event Photography</td>
+                        <td>Photography services for cat-themed events, parties, or gatherings.</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td>Custom Photo Shoot</td>
+                        <td>Customizable sessions for special requests or unique cat photoshoots.</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td>Online Gallery Access</td>
+                        <td>Access to your photos through a secure online gallery for easy viewing and sharing.</td>
+                        <td>Included</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section class="contact-container">
+            <div class="contact-form">
+                <h2>Contact Greg's Cat Photography</h2>
+                <p>Feel free to reach out using the form below.</p>
+    
+                <form action="#" method="POST">
                     <fieldset>
-                        <legend>Musical Interest</legend>
-
+                        <legend>Contact Information</legend>
                         <label for="fName">First Name:</label>
                         <input type="text" name="fName" id="fName">
-
+    
                         <label for="lName">Last Name:</label>
                         <input type="text" name="Lname" id="lName">
-
+    
                         <label for="email">Email:</label>
                         <input type="email" name="email" id="email">
-
+    
                         <label for="phone">Phone:</label>
-                        <input type="tel" id="phone" name="phone">
-
+                        <input type="tel" name="phone" id="phone">
+    
+                        <label for="message">Tell me more about what type of photography experience you are looking for:</label>
+                        <textarea id="message" name="message" rows="8" cols="90" placeholder="Enter your message here..."></textarea>
                     </fieldset>
-
-                    <fieldset>
-                        <p>I am interested in:</p>
-                        <label for="guitarles"><input type="checkbox" name="interest" id="guitarles"
-                                value="Guitar Lessons">Guitar Lessons</label>
-
-                        <label for="pianoles"><input type="checkbox" name="interest" id="pianoles"
-                                value="Piano Lessons">Piano Lessons</label>
-
-                        <label for="violinles"><input type="checkbox" name="interest" id="violinles"
-                                value="Violin Lessons">Violin Lessons</label>
-
-                        <label for="rent"><input type="checkbox" name="interest" id="rent"
-                                value="Rental Equipment">Rental Equipment </label>
-                    </fieldset>
-
-                    <input type="submit" id="submit" value="Submit" class="btn">
+    
+                    <button type="submit">Submit</button>
                 </form>
             </div>
+            <div class="contact-photo">
+                <img src="images/tim-mossholder-gdsp6wNn7cM-unsplash.jpg" alt="Cat looking at computer">
+            </div>
+        </section>
 
-        </div>
     </main>
 
-    <!--Use the footer area to add webpage footer content-->
-
     <footer>
-        <p>&copy; Copyright 2012. All Rights Reserved.</p>
-        <p> <a href="emailto:lesson@strikeachord.net">lessons@strikeachord.net </a></p>
+        <p>&copy; 2024 Greg P. French. Designed by Sandra Yoder</p>
     </footer>
-
-    <script src="scripts/script.js"></script>
-
-
 </body>
 
 </html>
